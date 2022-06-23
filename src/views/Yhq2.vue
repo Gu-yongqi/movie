@@ -6,7 +6,7 @@
     </van-cell-group>
     <div style="font-size:12px; color:#aaa; margin:10px;">添加后的优惠券,可在付款时使用,也可在“我的--票券”中查看。</div>
     <button @click="$toast('请输入正确的券号');">确定</button>
-    <van-number-keyboard :show="show" v-model="val" extra-key="" @blur="show=false" style="padding-bottom:0;" />
+    <!-- <van-number-keyboard :show="show" v-model="val" extra-key="" @blur="show=false" style="padding-bottom:0;" /> -->
   </div>
 </template>
 
@@ -14,7 +14,7 @@
 export default {
   data() {
     return {
-      show: false,
+      // show: false,
       val: ''
     }
   }

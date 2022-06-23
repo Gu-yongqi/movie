@@ -127,7 +127,7 @@
     <van-dialog v-model="tel" title="修改手机号" @confirm="conname">
       <div style="width: 250px; height: 42px; border: 1px solid #aaa;border-radius: 20px;line-height: 42px;margin: 0 auto;font-size: 13px;"><input type="text" placeholder="请输入账号" autocomplete="off" v-model="username" @touchstart.stop="show=true" style=" width: 180px; margin-left:10px; letter-spacing: 1px;border: #fff;height: 30px;"></div>
     </van-dialog>
-    <van-number-keyboard :show="show" extra-key="" @blur="show = false" v-model="username" :maxlength="11" z-index="2022" style="padding-bottom:0;" />
+    <!-- <van-number-keyboard :show="show" extra-key="" @blur="show = false" v-model="username" :maxlength="11" z-index="2022" style="padding-bottom:0;" /> -->
   </div>
 </template>
 
@@ -144,7 +144,7 @@ export default {
       logname: '',
       tel: false,
       username: '',
-      show: false,
+      // show: false,
       model: false
     }
   },

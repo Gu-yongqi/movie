@@ -8,12 +8,12 @@
       <input type="text" placeholder="请输入账号" autocomplete="off" v-model="username" @touchstart.stop="show=true">
       <div @click="clearName" :style="{display:(username.length>0?'block':'none')}">X</div>
     </div>
-    <van-number-keyboard :show="show" extra-key="" @blur="show = false" v-model="username" :maxlength="11" />
+    <!-- <van-number-keyboard :show="show" extra-key="" @blur="show = false" v-model="username" :maxlength="11" /> -->
     <div class="ipt" style="margin-top:20px;">
       <input type="password" placeholder="请输入密码" autocomplete="off" v-model="password" @touchstart.stop="show=true">
       <div @click="clearWord" :style="{display:(password.length>0?'block':'none')}">X</div>
     </div>
-    <van-number-keyboard :show="show" extra-key="" @blur="show = false" v-model="password" :maxlength="8" />
+    <!-- <van-number-keyboard :show="show" extra-key="" @blur="show = false" v-model="password" :maxlength="8" /> -->
     <van-button round block type="info" native-type="submit" class="submit" @click="submit">登录</van-button>
     <van-checkbox v-model="checked" icon-size="12px" checked-color="#ee0a24" class="che">我已阅读并同意<span @click="$router.push('/one')">《用户协议》</span><span @click="$router.push('/two')">《用户隐私制度》</span></van-checkbox>
     <div class="log">
@@ -29,7 +29,7 @@ export default {
     return {
       username: '',
       password: '',
-      show: false,
+      // show: false,
       checked: false,
     };
   },
@@ -89,9 +89,9 @@ export default {
 
 <style lang="scss">
 .login {
-  .van-number-keyboard {
-    padding-bottom: 0;
-  }
+  // .van-number-keyboard {
+  //   padding-bottom: 0;
+  // }
   .ipt {
     width: 300px;
     height: 42px;

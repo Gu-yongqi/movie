@@ -229,7 +229,7 @@
     <van-dialog v-model="tel" title="修改手机号" @confirm="conname">
       <div style="width: 250px; height: 42px; border: 1px solid #aaa;border-radius: 20px;line-height: 42px;margin: 0 auto;font-size: 13px;"><input type="text" placeholder="请输入账号" autocomplete="off" v-model="username" @touchstart.stop="show3=true" style=" width: 180px; margin-left:10px; letter-spacing: 1px;border: #fff;height: 30px;"></div>
     </van-dialog>
-    <van-number-keyboard :show="show3" extra-key="" @blur="show3 = false" v-model="username" :maxlength="11" z-index="2022" style="padding-bottom:0;" />
+    <!-- <van-number-keyboard :show="show3" extra-key="" @blur="show3 = false" v-model="username" :maxlength="11" z-index="2022" style="padding-bottom:0;" /> -->
   </div>
 </template>
 
@@ -248,7 +248,7 @@ export default {
       show: true,
       tel: false,
       username: '',
-      show3: false,
+      // show3: false,
       model: false,
       msg: "1.开映2小时之前场次且未取票的订单,可在个人订单页面申请退票;\n2.开映30分钟之前,2小时之内的场次且未取票的订单,需扣除朋友等级权益中“退票权益”的有效次数方可进行退票;\n各等级朋友退票权益有效次数为:\n- 初心朋友: 不支持;\n- 动心朋友: 1次/年;\n- 知心朋友、衷心朋友: 1次/月;\n3.如需退票的订单中使用优惠券或代金券支付,退票后券将立即返回至原账户,且有效期不变;若券在返还时已过期,则无法继续使用,且不做额外补发;\n4.30分钟内即将开映的场次、已开映的场次、已取票的订单,不支持退票;\n5.同笔订单中包含影票及卖品时,仅支持全单取消,不支持订单部分取消;卖品兑换有效期至影片观影后1天,过期无法兑换;\n6.单独购买的卖品,兑换有效期为购买当日起14天内,过期及已打印兑换凭证的不能退换(请参考凭证提示);\n7.上述退票规则仅适用于CGV影城官方APP及微信小程序。",
       time: 15 * 60 * 1000,

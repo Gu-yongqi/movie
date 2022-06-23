@@ -7,7 +7,7 @@
     <van-cell-group>
       <van-field label="身份证" placeholder="请输入您的身份证号" v-model="val" @focus="show=true" @blur="show=false" />
     </van-cell-group>
-    <van-number-keyboard :show="show" v-model="val" extra-key="X" @blur="show=false" style="padding-bottom:0;" />
+    <!-- <van-number-keyboard :show="show" v-model="val" extra-key="X" @blur="show=false" style="padding-bottom:0;" /> -->
     <button @click="submit">确定</button>
   </div>
 </template>
