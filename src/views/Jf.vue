@@ -3,7 +3,7 @@
     <van-nav-bar title="我的积分" fixed placeholder z-index="999" left-arrow @click-left="$router.back()" />
     <div class="one" @click="$router.push('/vip')">
       <div>
-        <img :src="avatar" alt="">
+        <img :src="$root.userInfo.avatar||'img/ftx.png'" alt="">
         <span>初心朋友</span>
         <van-icon name="like-o" color="#8dd3f4" />
       </div>

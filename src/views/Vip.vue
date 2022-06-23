@@ -6,7 +6,7 @@
       <div class="two">
         <div class="left">
           <div>Hi,{{nickname}}</div>
-          <img :src="avatar" alt="" @click="$router.push('/info')">
+          <img :src="$root.userInfo.avatar||'img/ftx.png'" alt="" @click="$router.push('/info')">
           <span>初心朋友</span>
           <div @click="$router.push('/info')">
             <svg class="icon" aria-hidden="true" style=" font-size:20px;">
